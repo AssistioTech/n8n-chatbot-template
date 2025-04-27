@@ -345,7 +345,9 @@
     
     const newConversationHTML = `
         <div class="brand-header">
-            <img src="${config.branding.logo}" alt="${config.branding.name}" class="brand-logo">
+            <div class="brand-logo">
+                <img src="${config.branding.logo}" alt="${config.branding.name}">
+            </div>
             <span>${config.branding.name}</span>
             <button class="close-button">×</button>
         </div>
@@ -364,7 +366,9 @@
     const chatInterfaceHTML = `
         <div class="chat-interface">
             <div class="brand-header">
-                <img src="${config.branding.logo}" alt="${config.branding.name}" class="brand-logo">
+                <div class="brand-logo">
+                    <img src="${config.branding.logo}" alt="${config.branding.name}">
+                </div>
                 <span>${config.branding.name}</span>
                 <button class="close-button">×</button>
             </div>
