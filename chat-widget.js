@@ -104,7 +104,7 @@
             gap: 8px;
             width: 100%;
             padding: 16px 24px;
-            background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+            background: var(--chat--color-secondary);
             color: white;
             border: none;
             border-radius: 8px;
@@ -203,7 +203,7 @@
         }
 
         .n8n-chat-widget .chat-input button {
-            background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+            background: var(--chat--color-secondary);
             color: white;
             border: none;
             border-radius: 8px;
