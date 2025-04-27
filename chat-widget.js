@@ -469,12 +469,7 @@
         }
     }
 
-    newChatBtn.addEventListener('click', () => {
-      startNewConversation();
-    
-      const newConvBlock = chatContainer.querySelector('.new-conversation');
-      if (newConvBlock) newConvBlock.remove();
-    });
+    newChatBtn.addEventListener('click', startNewConversation);
     
     sendButton.addEventListener('click', () => {
         const message = textarea.value.trim();
