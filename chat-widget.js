@@ -223,7 +223,8 @@
             background: var(--chat--color-background);
             border-top: 1px solid rgba(133, 79, 255, 0.1);
             display: flex;
-            gap: 0px;
+            gap: 12px;
+            align-items: flex-start;
         }
 
         .n8n-chat-widget .chat-input textarea {
@@ -253,7 +254,9 @@
             transition: transform 0.2s;
             font-family: inherit;
             font-weight: 500;
-            margin-top: 10px;
+            height: 44px;
+            margin: 0;
+            align-self: stretch;
         }
 
         .n8n-chat-widget .chat-input button:hover {
