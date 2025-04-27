@@ -423,7 +423,6 @@
             chatInterface.classList.add('active');
 
             const botMessageDiv = document.createElement('div');
-            botMessageDiv.className = 'chat-message bot';
             botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
