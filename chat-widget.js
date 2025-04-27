@@ -47,6 +47,24 @@
                 right: auto;
                 left: 20px;
             }
+            
+            /* تغییرات برای نمایش موبایل - محل ورودی و دکمه ارسال */
+            .n8n-chat-widget .chat-input {
+                flex-direction: column;
+                gap: 10px;
+                padding: 12px;
+            }
+            
+            .n8n-chat-widget .chat-input textarea {
+                width: 100%;
+                padding: 12px;
+            }
+            
+            .n8n-chat-widget .chat-input button {
+                width: 100%;
+                padding: 12px;
+                height: 44px;
+            }
         }
 
         .n8n-chat-widget .chat-container.position-left {
