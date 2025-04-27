@@ -271,6 +271,13 @@
         .n8n-chat-widget .chat-footer a:hover {
             opacity: 1;
         }
+
+        .brand-logo {
+          width: 32px;
+          height: 32px;
+          background-color: #0e1319;
+          border-radius: 50%;
+        }
     `;
 
     // Load Geist font
@@ -338,7 +345,7 @@
     
     const newConversationHTML = `
         <div class="brand-header">
-            <img src="${config.branding.logo}" alt="${config.branding.name}">
+            <img src="${config.branding.logo}" alt="${config.branding.name}" class="brand-logo">
             <span>${config.branding.name}</span>
             <button class="close-button">×</button>
         </div>
@@ -357,7 +364,7 @@
     const chatInterfaceHTML = `
         <div class="chat-interface">
             <div class="brand-header">
-                <img src="${config.branding.logo}" alt="${config.branding.name}">
+                <img src="${config.branding.logo}" alt="${config.branding.name}" class="brand-logo">
                 <span>${config.branding.name}</span>
                 <button class="close-button">×</button>
             </div>
