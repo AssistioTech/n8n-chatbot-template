@@ -227,6 +227,12 @@
             gap: 8px;
         }
 
+        @media (max-width: 600px) {
+          .n8n-chat-widget .chat-input {
+            margin-bottom: -16px;
+          }
+        }
+
         .n8n-chat-widget .chat-input textarea {
             flex: 1;
             padding: 12px;
