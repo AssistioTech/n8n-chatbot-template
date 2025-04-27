@@ -35,7 +35,6 @@
                 bottom: 80px;
                 right: 50%;
                 transform: translateX(50%);
-                gap: 0px !important;
             }
             
             .n8n-chat-widget .chat-container.position-left {
@@ -49,7 +48,6 @@
                 left: 20px;
             }
             
-            /* تغییرات برای نمایش موبایل - محل ورودی و دکمه ارسال */
             .n8n-chat-widget .chat-input {
                 flex-direction: column;
                 gap: 10px;
@@ -225,6 +223,7 @@
             background: var(--chat--color-background);
             border-top: 1px solid rgba(133, 79, 255, 0.1);
             display: flex;
+            gap: 0px;
         }
 
         .n8n-chat-widget .chat-input textarea {
