@@ -470,7 +470,12 @@
         }
     }
 
-    newChatBtn.addEventListener('click', startNewConversation);
+    newChatBtn.addEventListener('click', () => {
+      startNewConversation();
+    
+      const newConvBlock = chatContainer.querySelector('.new-conversation');
+      if (newConvBlock) newConvBlock.remove();
+    });
     
     sendButton.addEventListener('click', () => {
         const message = textarea.value.trim();
