@@ -246,10 +246,10 @@
             transform: scale(1.05);
         }
 
-        .n8n-chat-widget .chat-toggle svg {
+        .n8n-chat-widget .chat-toggle img {
             width: 24px;
             height: 24px;
-            fill: currentColor;
+            object-fit: contain;
         }
 
         .n8n-chat-widget .chat-footer {
