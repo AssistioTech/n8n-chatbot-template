@@ -35,6 +35,7 @@
                 bottom: 80px;
                 right: 50%;
                 transform: translateX(50%);
+                gap: 0;
             }
             
             .n8n-chat-widget .chat-container.position-left {
