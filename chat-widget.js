@@ -16,14 +16,37 @@
             right: 20px;
             z-index: 1000;
             display: none;
-            width: 380px;
-            height: 600px;
+            width: 90%;
+            max-width: 380px;
+            height: 80vh;
+            max-height: 600px;
             background: var(--chat--color-background);
             border-radius: 12px;
             box-shadow: 0 8px 32px rgba(133, 79, 255, 0.15);
             border: 1px solid rgba(133, 79, 255, 0.2);
             overflow: hidden;
             font-family: inherit;
+        }
+
+        @media (max-width: 480px) {
+            .n8n-chat-widget .chat-container {
+                width: 85%;
+                height: 70vh;
+                bottom: 80px;
+                right: 50%;
+                transform: translateX(50%);
+            }
+            
+            .n8n-chat-widget .chat-container.position-left {
+                right: 50%;
+                left: auto;
+                transform: translateX(50%);
+            }
+            
+            .n8n-chat-widget .chat-toggle.position-left {
+                right: auto;
+                left: 20px;
+            }
         }
 
         .n8n-chat-widget .chat-container.position-left {
@@ -424,6 +447,7 @@
             chatInterface.classList.add('active');
 
             const botMessageDiv = document.createElement('div');
+            botMessageDiv.className = 'chat-message bot';
             botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
