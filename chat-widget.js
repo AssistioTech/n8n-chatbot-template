@@ -68,8 +68,8 @@
         }
 
         .n8n-chat-widget .brand-header img {
-            width: 32px;
-            height: 32px;
+            width: 40px;
+            height: 40px;
         }
 
         .n8n-chat-widget .brand-header span {
@@ -162,7 +162,7 @@
         }
 
         .n8n-chat-widget .chat-message.user {
-            background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+            background: var(--chat--color-secondary);
             color: white;
             align-self: flex-end;
             box-shadow: 0 4px 12px rgba(133, 79, 255, 0.2);
