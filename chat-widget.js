@@ -48,6 +48,7 @@
                 left: 20px;
             }
             
+            /* تغییرات برای نمایش موبایل - محل ورودی و دکمه ارسال */
             .n8n-chat-widget .chat-input {
                 flex-direction: column;
                 gap: 10px;
@@ -223,8 +224,7 @@
             background: var(--chat--color-background);
             border-top: 1px solid rgba(133, 79, 255, 0.1);
             display: flex;
-            gap: 12px;
-            align-items: flex-start;
+            gap: 8px;
         }
 
         .n8n-chat-widget .chat-input textarea {
@@ -254,9 +254,6 @@
             transition: transform 0.2s;
             font-family: inherit;
             font-weight: 500;
-            height: 44px;
-            margin: 0;
-            align-self: stretch;
         }
 
         .n8n-chat-widget .chat-input button:hover {
@@ -468,6 +465,7 @@
             chatInterface.classList.add('active');
 
             const botMessageDiv = document.createElement('div');
+            botMessageDiv.className = 'chat-message bot';
             botMessageDiv.textContent = Array.isArray(responseData) ? responseData[0].output : responseData.output;
             messagesContainer.appendChild(botMessageDiv);
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
